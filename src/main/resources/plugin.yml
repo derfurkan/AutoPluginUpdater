@@ -1,0 +1,9 @@
+name: AutoPluginUpdater
+version: 1.0
+author: snap20lp
+api-version: 1.13
+main: de.snap20lp.autopluginupdater.Core
+load: POSTWORLD
+
+commands:
+  update:

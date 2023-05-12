@@ -1,0 +1,32 @@
+#Welcome to AutoPluginUpdater
+#This plugin will automatically update your plugins on the Server.
+#Here you can specify the behavior of the plugin.
+#This plugin does not work with updating Premium resources.
+
+# !! But beware that your changes might break other plugins or may remove plugins from your server !!
+
+
+# Ignore plugins that you don't want to update.
+ignoredPlugins:
+  - ProtocolLib
+  - Your_Anti_Cheat
+  - Plugin_Name_XYZ
+
+# If a plugin's file size is higher than this value given in 'Megabytes' it will be ignored from updates.
+maxSizeToCheck: 20
+
+# If you want to check for updates at the start of the server.
+# This may interfere with other plugins that run async tasks.
+checkForUpdatesAtStartup: false
+
+# If set to true a plugin that has been updated will re-start automatically.
+# This may lead to problems if the plugin has not properly implemented a reload function in its logic.
+autoReEnablePlugins: false
+
+# If set to true AutoPluginUpdater will automatically search for the spigot pages of your plugins.
+# This may lead to a wrong spigotURL where AutoPluginUpdater will get updates for a Plugin.
+# You should always check if the spigotURL matches with the plugin you want to update.
+# (Spigot Pages are needed to keep track of the latest version of a plugin)
+# Spigot Pages are stored in the 'pluginSources.json' file
+autoAddNewPluginSources: true
+
